@@ -11,11 +11,8 @@ def plot_points_from_txt(dataset_path):
     plt.figure(figsize=(9.6, 5.4))
     plt.scatter(x, y, c='black', alpha=0.7)
     plt.title("Точки на координатній площині")
-    plt.xlabel("X")
-    plt.ylabel("Y")
-    plt.grid(True)
+    plt.savefig('neutral_smile.png', dpi=100)
     plt.show()
 
 dataset_path = "DS1.txt"
 plot_points_from_txt(dataset_path)
-
